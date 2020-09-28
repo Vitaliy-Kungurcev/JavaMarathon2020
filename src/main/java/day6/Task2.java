@@ -1,5 +1,3 @@
-package day6;
-
 public class Task2 {
     public static void main(String[] args) {
         Plane plane = new Plane("Aeroflot", 2015, 45, 12000);
@@ -54,4 +52,3 @@ public class Task2 {
 
 
 }
-

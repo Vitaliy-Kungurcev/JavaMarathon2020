@@ -1,6 +1,6 @@
 package day6;
 
-class Car {
+public class Car {
     int yearOfManufacture;
     String color;
     String model;

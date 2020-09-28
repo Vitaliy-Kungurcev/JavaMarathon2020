@@ -28,8 +28,8 @@ class Motorbike {
         System.out.println("Это мотоцикл");
     }
 
-    public int yearDifference(int year) {
-        int yearDiff = year - yearOfManufacture;
+    public int yearDifference(int setYear) {
+        int yearDiff = setYear - yearOfManufacture;
         return yearDiff;
     }
 }
