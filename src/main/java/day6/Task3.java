@@ -3,18 +3,34 @@ package day6;
 public class Task3 {
     public static void main(String[] args) {
         Teacher teacher = new Teacher();
-        teacher.FIO = "Иванова Мария Ивановна";
-        teacher.object = "Математика";
+        teacher.setFIO("Иванова Мария Ивановна");
+        teacher.setObject("Математика");
         Student student = new Student();
-        String FIOStud = student.FIOstudent;
+        String FIOStud = student.getFIOstudent();
         student.setFIOstudent("Дураков Дурак Иванович");
         teacher.evaluate(3, student.getFIOstudent());
     }
+}
+    class Teacher {
+        public String getFIO() {
+            return FIO;
+        }
 
-    public static class Teacher {
-        String FIO;
-        String object;
-        String result;
+        public void setFIO(String FIO) {
+            this.FIO = FIO;
+        }
+
+        public String getObject() {
+            return object;
+        }
+
+        public void setObject(String object) {
+            this.object = object;
+        }
+
+        private String FIO;
+        private String object;
+        private String result;
 
         public void evaluate(int point, String FIOStudent) {
             if (2 <= point && point <= 5) {
@@ -38,8 +54,8 @@ public class Task3 {
     }
 
 
-    public static class Student {
-        String FIOstudent;
+    class Student {
+        private String FIOstudent;
 
         public void setFIOstudent(String FIOstudent) {
             this.FIOstudent = FIOstudent;
@@ -51,5 +67,5 @@ public class Task3 {
 
 
     }
-}
+
 
