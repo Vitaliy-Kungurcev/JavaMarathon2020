@@ -1,9 +1,7 @@
 package day7;
 
 public class Airplane {
-    public int getYearOfManufacture() {
-        return yearOfManufacture;
-    }
+
 
     public int getLenght() {
         return lenght;
