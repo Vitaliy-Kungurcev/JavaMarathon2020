@@ -6,6 +6,7 @@
 //import org.junit.jupiter.api.Test;
 //
 //import java.io.File;
+//import java.io.IOException;
 //
 //class Day14Task2Test extends AbstractTest {
 //
@@ -26,7 +27,7 @@
 //    }
 //
 //    @Test
-//    void fileNotFound() {
+//    void fileNotFound() throws IOException {
 //        File file = new File("src/test/resources/D14T2_miss.txt");
 //        Task2.parseFileToStringList(file);
 //        Assertions.assertEquals("Файл не найден" + System.lineSeparator(), getOutput(),
