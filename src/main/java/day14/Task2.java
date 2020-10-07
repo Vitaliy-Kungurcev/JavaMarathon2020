@@ -29,11 +29,12 @@ public class Task2 {
                     throw new IOException();
                 }
             }
+            return peopleList;
         } catch (FileNotFoundException e) {
             System.out.println("Файл не найден");
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return peopleList;
+        return null;
     }
 }
